@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("./Norse-Bold.otf") format("opentype");
+}
+
+:root {
+  font-family: "Montserrat";
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 98vw;
+  margin: 0;
+}
+
+#header {
+  background-image: url("image.avif");
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-and-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 75vw;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#logo {
+  width: 120px;
+  height: 150px;
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  font-family: "Norse-Bold";
+}
+
+#intro-text {
+  padding-top: 15vh;
+  padding-right: 10vw;
+  padding-left: 5vw;
+}
+
+p {
+  font-size: 1.5rem;
+  padding-left: 5vw;
+}
+
+h3 {
+  flex-basis: 100vw;
+  font-size: 1.3rem;
+}
+
+#content {
+  background-color: rgba(255, 250, 250, 1);
+}
+
+#form {
+  background-color: white;
+  padding-top: 2vh;
+  padding-right: 5vw;
+  padding-bottom: 4vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 5vw;
+}
+
+button {
+  margin-left: 5vw;
+  display: block;
+  margin-top: 20px;
+  width: auto;
+  padding: 15px 50px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 0px;
+  color: #fff;
+  background-color: #596d48;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.form-item {
+  flex-basis: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+input {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(148, 148, 148, 0.307);
+  border-radius: 3px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgb(0, 0, 255);
+}

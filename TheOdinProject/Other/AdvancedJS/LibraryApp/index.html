@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library App</title>
+    <script src="app.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Welcome to your Personal Library</h1>
+      <p>
+        This is part of the Odin Project Curriculum. The link to the project is
+        here:
+        <a
+          href="https://www.theodinproject.com/lessons/node-path-javascript-library"
+          >The Odin Project</a
+        >
+      </p>
+      <p>Created by Demir Dereli</p>
+    </div>
+    <button onclick="openPopup()" class="big-red-button">Add Book</button>
+    <div id="library"></div>
+    <div class="overlay" id="overlay">
+      <div class="popup">
+        <div>
+          <label for="bookName">Book Name: </label>
+          <input
+            type="text"
+            id="bookName"
+            name="bookName"
+            placeholder="Book's Name"
+          />
+        </div>
+        <div>
+          <label for="author">Author Name: </label>
+          <input
+            type="text"
+            id="author"
+            name="author"
+            placeholder="Author's Name"
+          />
+        </div>
+        <div>
+          <label for="noOfPages">Page Number: </label>
+          <input
+            type="text"
+            id="noOfPages"
+            name="noOfPages"
+            placeholder="Page Number"
+          />
+        </div>
+        <label for="read">Have you read the book</label>
+
+        <!-- Select dropdown -->
+        <select id="read" name="read">
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.box {
+  flex-basis: 20px;
+  flex-shrink: 0;
+  height: 20px;
+  border: 1px solid grey;
+}
+
+.box:hover {
+  background-color: grey;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 660px;
+  border: 10px solid #12e691;
+  border-radius: 20px;
+}
+
+h1 {
+  font-weight: 900;
+  color: #12e691;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
